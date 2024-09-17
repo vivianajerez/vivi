@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>vivi6</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="archivo6.js"></script>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        #surpriseContainer {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #surpriseImage {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+        }
+
+        #unlockContainer {
+            margin-top: 20px;
+        }
+
+        #unlockCheck {
+            transform: scale(1.5);
+            margin-left: 10px;
+        }
+
+        /* Animaciones */
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>¡Desbloquea la Sorpresa!</h1>
+
+    <!-- Contenedor para la sorpresa -->
+    <div id="surpriseContainer">
+        <img id="surpriseImage" src="holi.jpg" alt="Sorpresa!">
+        <p>¡Sorpresa! FELIZ CUMPLE !</p>
+    </div>
+
+    <!-- Checkbox para desbloquear la sorpresa -->
+    <div id="unlockContainer">
+        <label for="unlockCheck">Desbloquear Sorpresa</label>
+        <input type="checkbox" id="unlockCheck">
+    </div>
+</body>
+</html>
